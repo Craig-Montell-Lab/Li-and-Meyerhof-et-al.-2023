@@ -1,4 +1,4 @@
-%% Sun Seeker Arousal Threshold
+%% Fly tracker and sleep arousal threshold
 %Experimental parameters 
 Parameters 
 
