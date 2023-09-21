@@ -1,4 +1,4 @@
-%SunSeeker parameters
+%FlyTrax parameters
 %% dialogue box to set parameters 
 predDate = datestr(datetime+1);
 predStart = datetime(strcat(predDate(1:11), ' 08:00:00'));
@@ -21,7 +21,7 @@ mkdir(answer{5})
 Params.saveDir = answer{5};
 
 %% video params 
-% Params.File = '/Volumes/Backup Plus/reviewer_exps/sleep_depth/Example_stim.mp4'
+% Params.File = '' %name parameter file here
 % Params.videoSource = vision.VideoFileReader(Params.File,'VideoOutputDataType','uint8')%video example
 Params.videoSource = imaq.VideoDevice('winvideo',2,'MJPG_1920x1080',...
     'ReturnedColorSpace',...
@@ -42,9 +42,9 @@ Params.minArea = 10; %min area of fly
 
 %% Arousal params
 Params.PulseInterval = 120; %pulse interval in minutes (i.e. how long to wait for a new pulse)
-Params.PulseWait = 10; %time between low, medium, high stim (s)
-Params.StimStep = 1; %change in voltage between each stimulation
-Params.PulseLength = 10; %time of stimulus (s)
+Params.PulseWait = 120; %time between low, medium, high stim (s)
+Params.StimStep = 2; %change in voltage between each stimulation
+Params.PulseLength = 3; %time of stimulus (s)
 Params.PulseThreshold = 0; %proportion of flies that must be asleep for a pulse 
 
 %% Arduino Params 
