@@ -12,6 +12,6 @@ createVibrationObject
 getROIs 
 
 %Begin tracking 
-SunSeekerTrax
+FlyTraxAndVibrate
 
 
